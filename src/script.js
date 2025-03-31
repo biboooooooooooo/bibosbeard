@@ -25,4 +25,9 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 });
 
 const repoName = window.location.pathname.split('/')[1];
-document.getElementById('redirectButton').href = '/' + repoName + '/pagina.html';
+let pathPrefix = '/' + repoName;
+  if (window.location.pathname.includes('/src/')) {
+    pathPrefix += '/src';
+  }
+
+document.getElementById('redirectButton').href = pathPrefix + '/pagina.html';
