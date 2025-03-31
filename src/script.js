@@ -23,3 +23,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("form-status").style.color = "red";
     });
 });
+
+const repoName = window.location.pathname.split('/')[1];
+document.getElementById('redirectButton').href = '/' + repoName + '/pagina.html';
