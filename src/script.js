@@ -23,11 +23,3 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("form-status").style.color = "red";
     });
 });
-
-const repoName = window.location.pathname.split('/')[1];
-let pathPrefix = '/' + repoName;
-  if (window.location.pathname.includes('/src/')) {
-    pathPrefix += '/src';
-  }
-
-document.getElementById('redirectButton').href = pathPrefix + '/contact.html';
