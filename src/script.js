@@ -30,4 +30,4 @@ let pathPrefix = '/' + repoName;
     pathPrefix += '/src';
   }
 
-document.getElementById('redirectButton').href = pathPrefix + '/pagina.html';
+document.getElementById('redirectButton').href = pathPrefix + '/contact.html';
